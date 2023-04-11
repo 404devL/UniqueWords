@@ -1,0 +1,4 @@
+1. SELECT * FROM Employee WHERE Salary = (SELECT MAX(Salary) FROM Employee)
+2. -
+3. SELECT Department.Name, SUM(Employee.Salary) as Salary FROM Employee JOIN Department ON Employee.Department_ID = Department.ID GROUP BY Department.Name ORDER BY Salary DESC LIMIT 1;
+4. SELECT * FROM Employee WHERE Name LIKE 'Р%н'
